@@ -33,6 +33,24 @@ gulp.task('copy-to-wwwroot', function () {
     .pipe(gulp.dest('wwwroot'));
 });
 
+gulp.task('minifyhtml', function () {
+    return gulp.src(['wwwroot/**/*.html', '!/**/*.min.html', '!wwwroot/core/lib/**/*'], { base: 'wwwroot/./' })
+      .pipe(plumber({
+          errorHandler: onError
+      }))
+     .pipe(sourcemaps.init())
+     .pipe(minifyhtml())
+     .pipe(rename({
+         extname: '.min.html'
+     }))
+     .pipe(sourcemaps.write('./'))
+     .pipe(gulp.dest('wwwroot/./'));
+});
+
+
+
+
+
 // ----------------------------------------------------------------
 // Default Task
 // ----------------------------------------------------------------
