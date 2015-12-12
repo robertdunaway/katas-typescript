@@ -24,6 +24,15 @@ gulp.task('clean-wwwroot', function () {
       .pipe(clean());
 });
 
+gulp.task('copy-to-wwwroot', function () {
+    return gulp.src('src/**/*')
+      .pipe(plumber({
+          errorHandler: onError
+      }))
+    .pipe(newer('wwwroot'))
+    .pipe(gulp.dest('wwwroot'));
+});
+
 // ----------------------------------------------------------------
 // Default Task
 // ----------------------------------------------------------------
