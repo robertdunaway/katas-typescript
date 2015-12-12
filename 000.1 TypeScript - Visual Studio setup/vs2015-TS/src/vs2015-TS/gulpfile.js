@@ -16,3 +16,21 @@ var gulp = require('gulp')
     , watch = require('gulp-watch')
 ;
 
+gulp.task('clean-dist', function () {
+    return gulp.src('wwwroot', { read: false })
+      .pipe(plumber({
+          errorHandler: onError
+      }))
+      .pipe(clean());
+});
+
+// ----------------------------------------------------------------
+// Default Task
+// ----------------------------------------------------------------
+gulp.task('default', function () {
+    runSequence('annotate', 'clean-dist', 'copy', 'copyFromApps', 'replaceEnvironment',
+                ['coreservices', 'routeconfig', 'libs', 'minifyhtml', 'minifyimage'
+                    , 'grunt-merge-json:menu', 'jshint', 'tscompile', 'tslint', 'sass']
+                , ['uglifyalljs', 'minifycss']
+                , 'watch');
+});
