@@ -7,7 +7,7 @@ Use standards and guidelines as references for katas.
 
 Use interview questions for katas.
 
-
+Dealing with Nulls!
 
 
 NOTE: Excellent resource to make sure content is not accidentally plagiarised.
