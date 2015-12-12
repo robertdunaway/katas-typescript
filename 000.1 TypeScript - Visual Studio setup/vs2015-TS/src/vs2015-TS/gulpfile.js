@@ -16,8 +16,8 @@ var gulp = require('gulp')
     , watch = require('gulp-watch')
 ;
 
-gulp.task('clean-dist', function () {
-    return gulp.src('wwwroot', { read: false })
+gulp.task('clean-wwwroot', function () {
+    return gulp.src('wwwroot/**/*', { read: false })
       .pipe(plumber({
           errorHandler: onError
       }))
