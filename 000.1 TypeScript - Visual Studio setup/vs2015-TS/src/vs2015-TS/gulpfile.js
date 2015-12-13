@@ -1,4 +1,5 @@
-﻿var onError = function (err) {
+﻿/// <binding ProjectOpened='default' />
+var onError = function (err) {
     console.log(err);
 };
 
@@ -47,17 +48,67 @@ gulp.task('minifyhtml', function () {
      .pipe(gulp.dest('wwwroot/./'));
 });
 
+gulp.task('tscompile', function () {
+    return gulp.src(['./wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'])
+      .pipe(plumber({
+          errorHandler: onError
+      }))
+    .pipe(sourcemaps.init())
+    .pipe(ts({
+        target: 'ES5',
+        declarationFiles: false,
+        noExternalResolve: true
+    }))
+    .pipe(rename({ extname: '.js' }))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('wwwroot/./'));
+});
 
 
+gulp.task('tslint', function () {
+    return gulp.src(['./wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'])
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(tslint())
+        .pipe(tslint.report('verbose', {
+            emitError: false,
+            sort: true,
+            bell: true
+        }));
+});
 
 
+ 
 // ----------------------------------------------------------------
 // Default Task
 // ----------------------------------------------------------------
 gulp.task('default', function () {
-    runSequence('annotate', 'clean-dist', 'copy', 'copyFromApps', 'replaceEnvironment',
-                ['coreservices', 'routeconfig', 'libs', 'minifyhtml', 'minifyimage'
-                    , 'grunt-merge-json:menu', 'jshint', 'tscompile', 'tslint', 'sass']
-                , ['uglifyalljs', 'minifycss']
-                , 'watch');
+    runSequence('clean-wwwroot', 'copy-to-wwwroot',
+                ['minifyhtml', 'tscompile', 'tslint']
+                , 'watch'
+                );
+});
+
+
+gulp.task('watch', function () {
+
+    // ---------------------------------------------------------------
+    // Watching JS files
+    // ---------------------------------------------------------------
+    // Copy all files except *.js files.
+    gulp.watch(['src/**/*', '!bower_components/**.*'], function () { runSequence('copy-to-wwwroot'); });
+
+    // ---------------------------------------------------------------
+    // Watching TypeScript files
+    // ---------------------------------------------------------------
+    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'], function () { runSequence('tscompile'); });
+
+    // ---------------------------------------------------------------
+    // Watch - Execute linters
+    // ---------------------------------------------------------------
+    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'], function () { runSequence('tslint'); });
+
+    gulp.watch(['wwwroot/**/*.html', '!wwwroot/**/*.min.html', '!wwwroot/core/lib/**/*'], ['minifyhtml']);
+
 });
