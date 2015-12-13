@@ -18,7 +18,7 @@ var gulp = require('gulp')
 ;
 
 gulp.task('clean-wwwroot', function () {
-    return gulp.src('wwwroot/**/*', { read: false })
+    return gulp.src('wwwroot', { read: false })
       .pipe(plumber({
           errorHandler: onError
       }))
