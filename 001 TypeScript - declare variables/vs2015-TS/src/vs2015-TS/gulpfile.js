@@ -15,6 +15,7 @@ var gulp = require('gulp')
     , tslint = require('gulp-tslint')
     , tsstylish = require('gulp-tslint-stylish')
     , watch = require('gulp-watch')
+    , uglify = require('gulp-uglify')
 ;
 
 gulp.task('clean-wwwroot', function () {
@@ -60,6 +61,7 @@ gulp.task('tscompile', function () {
         noExternalResolve: true
     }))
     .pipe(rename({ extname: '.js' }))
+    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('wwwroot/./'));
 });
