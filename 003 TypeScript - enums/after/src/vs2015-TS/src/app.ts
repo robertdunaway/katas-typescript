@@ -4,7 +4,7 @@ console.log("Let's get started!");
 
 
 //Create an Enum using “Red”, “Green”, and “Blue”.  This is a commonly used to demonstrate Enums.
-//enum Color { Red, Green, Blue };
+enum Color { Red, Green, Blue };
 
 //Create a variable and set it equal to the “Green” enum value.
 //var myColor: number = Color.Red;
