@@ -4,8 +4,16 @@ console.log("Let's get started!");
 
 var myBool: boolean = true;
 var myNumber: number = 5;
-var myString: string = "Bob";
+var myString: string = 'Bob';
 
-var myAnyString: any = "Bob";
-var myAnyNumber: any = 5;
-var myAnyBool: any = true;
+var myAnyString: any = 'Joe';
+var myAnyNumber: any = 3;
+var myAnyBool: any = false;
+
+console.log(myBool);
+console.log(myNumber);
+console.log(myString);
+console.log(myAnyString);
+console.log(myAnyNumber);
+console.log(myAnyBool);
+
