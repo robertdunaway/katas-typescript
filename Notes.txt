@@ -14,5 +14,10 @@ NOTE: Excellent resource to make sure content is not accidentally plagiarised.
 https://www.thepensters.com/free-plagiarism-checker-for-students-online.html
 
 
-
-
+New Kata TODO:
+1. Copy/Paste from kata template
+2. Rename pasted kata and copy this name to the clip board
+3. Rename the docx file.
+4. Rename both before and after solution files.
+5. Check in code (before opening any solutions to avoid committing packages)
+6. 
