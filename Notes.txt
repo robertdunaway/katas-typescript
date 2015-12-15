@@ -22,4 +22,5 @@ New Kata TODO:
 5. Check in code (before opening any solutions to avoid committing packages)
 6. Open the before solution and do work there.
 7. Update the title of the docx file with kata name in clip board
-8. 
+8. Open and write code in the "after" solution.
+9. 
