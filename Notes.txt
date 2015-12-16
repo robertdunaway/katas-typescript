@@ -20,7 +20,8 @@ New Kata TODO:
 4. Update the title of the docx file with kata name in clip board
 
 5. Rename both before and after solution files.
-6. Check in code (before opening any solutions to avoid committing packages)
-7. Open the before solution and do work there.
-8. Open and write code in the "after" solution.
-9. Update the HTML page title
+6. Update the HTML page title
+7. Check in code (before opening any solutions to avoid committing packages)
+
+8. Open the before solution and do setup work there.
+9. Open the after solution and do kata there.
