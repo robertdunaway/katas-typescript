@@ -36,7 +36,7 @@ gulp.task('copy-to-wwwroot', function () {
 });
 
 gulp.task('minifyhtml', function () {
-    return gulp.src(['wwwroot/**/*.html', '!/**/*.min.html', '!wwwroot/core/lib/**/*'], { base: 'wwwroot/./' })
+    return gulp.src(['wwwroot/**/*.html', '!/**/*.min.html', '!wwwroot/core/lib/**/*'])
       .pipe(plumber({
           errorHandler: onError
       }))
