@@ -1,7 +1,5 @@
 TypeScript
 
-Reference podcast "15: Code Kata - A practice Areana for Becoming a Better Programmer" by Developer Tea
-
 
 Use standards and guidelines as references for katas.
 
