@@ -1,5 +1,8 @@
 TypeScript
 
+Excellent free ebook
+https://basarat.gitbooks.io/typescript/
+http://www.typescriptlang.org/
 
 Use standards and guidelines as references for katas.
 
