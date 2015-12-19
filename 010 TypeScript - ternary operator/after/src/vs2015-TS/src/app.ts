@@ -3,7 +3,7 @@
 console.log("Let's get started!");
 
 var myVal: number = null;
-var result: number = null;
+var result: any = null;
 
 // using an if statement
 if (myVal == null) {
@@ -22,3 +22,7 @@ myVal = 5;
 result = myVal ? myVal : 0;
 console.log('result = myVal ? myVal : 0; // result = ' + result);
 
+
+// Using a ternary operator to evaluate.
+result = (myVal == result) ? 'myVal and result both equal ' + result : 'values are not equal';
+console.log(result);
