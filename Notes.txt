@@ -3,6 +3,7 @@ TypeScript
 Excellent free ebook
 https://basarat.gitbooks.io/typescript/
 http://www.typescriptlang.org/
+https://www.sitepen.com/blog/2013/12/31/definitive-guide-to-typescript/
 
 Use standards and guidelines as references for katas.
 
