@@ -14,8 +14,11 @@ else {
 }
 console.log('result = ' + result);
 
-
-
-
+// Using a ternary operator to check for null.
 result = myVal ? myVal : 0;
 console.log('result = myVal ? myVal : 0; // result = ' + result);
+
+myVal = 5;
+result = myVal ? myVal : 0;
+console.log('result = myVal ? myVal : 0; // result = ' + result);
+
