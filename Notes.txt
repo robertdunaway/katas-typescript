@@ -29,3 +29,6 @@ New Kata TODO:
 
 8. Open the before solution and do setup work there.
 9. Open the after solution and do kata there.
+
+10. Update github list
+11. Update blogger list
