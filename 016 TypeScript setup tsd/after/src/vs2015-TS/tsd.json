@@ -4,5 +4,12 @@
   "ref": "master",
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
-  "installed": {}
+  "installed": {
+    "jquery/jquery.d.ts": {
+      "commit": "4c41545030eba44b27ce7209112dbf862f6b1d78"
+    },
+    "angularjs/angular.d.ts": {
+      "commit": "4c41545030eba44b27ce7209112dbf862f6b1d78"
+    }
+  }
 }
