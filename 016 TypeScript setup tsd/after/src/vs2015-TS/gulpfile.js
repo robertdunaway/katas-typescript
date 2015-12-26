@@ -1,4 +1,4 @@
-﻿/// <binding ProjectOpened='default' />
+﻿/// <binding ProjectOpened='default, tsd' />
 var onError = function (err) {
     console.log(err);
 };
