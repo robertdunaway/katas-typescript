@@ -16,6 +16,7 @@ var gulp = require('gulp')
     , tsstylish = require('gulp-tslint-stylish')
     , watch = require('gulp-watch')
     , uglify = require('gulp-uglify')
+    , tsd = require('gulp-tsd')
 ;
 
 gulp.task('clean-wwwroot', function () {
@@ -79,6 +80,11 @@ gulp.task('tslint', function () {
             bell: true
         }));
 });
+
+gulp.task('tsd', function () {
+    return gulp.src('./gulp_tsd.json').pipe(tsd());
+});
+
 
 
  
