@@ -17,6 +17,7 @@ var gulp = require('gulp')
     , watch = require('gulp-watch')
     , uglify = require('gulp-uglify')
     , tsd = require('gulp-tsd')
+    , reporters = require('reporters')
 ;
 
 gulp.task('clean-wwwroot', function () {
@@ -37,7 +38,7 @@ gulp.task('copy-to-wwwroot', function () {
 });
 
 gulp.task('minifyhtml', function () {
-    return gulp.src(['wwwroot/**/*.html', '!/**/*.min.html', '!wwwroot/core/lib/**/*'])
+    return gulp.src(['wwwroot/**/*.html', '!/**/*.min.html', '!wwwroot/lib/**/*'])
       .pipe(plumber({
           errorHandler: onError
       }))
@@ -51,7 +52,7 @@ gulp.task('minifyhtml', function () {
 });
 
 gulp.task('tscompile', function () {
-    return gulp.src(['./wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'])
+    return gulp.src(['./wwwroot/**/*.ts', '!wwwroot/lib/**/*.*', '!wwwroot/css/**/*.*'])
       .pipe(plumber({
           errorHandler: onError
       }))
@@ -69,17 +70,13 @@ gulp.task('tscompile', function () {
 
 
 gulp.task('tslint', function () {
-    return gulp.src(['./wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'])
-        .pipe(plumber({
-            errorHandler: onError
-        }))
-        .pipe(tslint())
-        .pipe(tslint.report('verbose', {
-            emitError: false,
-            sort: true,
-            bell: true
-        }));
+    var tsResult = gulp.src(['./wwwroot/**/*.ts', '!wwwroot/lib/**/*.*', '!wwwroot/css/**/*.*', '!.//**/*.d.ts'])
+      .pipe(tslint())
+      .pipe(tslint.report(reporters('gulp-tslint', {warning: true})))
+      .pipe(ts({}, {}, reporters('gulp-typescript')));
 });
+
+
 
 gulp.task('tsd', function () {
     return gulp.src('./gulp_tsd.json').pipe(tsd());
@@ -110,13 +107,13 @@ gulp.task('watch', function () {
     // ---------------------------------------------------------------
     // Watching TypeScript files
     // ---------------------------------------------------------------
-    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'], function () { runSequence('tscompile'); });
+    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/lib/**/*.*', '!wwwroot/css/**/*.*'], function () { runSequence('tscompile'); });
 
     // ---------------------------------------------------------------
     // Watch - Execute linters
     // ---------------------------------------------------------------
-    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/core/lib/**/*.*', '!wwwroot/core/css/**/*.*'], function () { runSequence('tslint'); });
+    gulp.watch(['wwwroot/**/*.ts', '!wwwroot/lib/**/*.*', '!wwwroot/css/**/*.*'], function () { runSequence('tslint'); });
 
-    gulp.watch(['wwwroot/**/*.html', '!wwwroot/**/*.min.html', '!wwwroot/core/lib/**/*'], ['minifyhtml']);
+    gulp.watch(['wwwroot/**/*.html', '!wwwroot/**/*.min.html', '!wwwroot/lib/**/*'], ['minifyhtml']);
 
 });
