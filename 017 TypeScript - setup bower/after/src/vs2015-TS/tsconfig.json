@@ -3,6 +3,7 @@
     "bower_components",
     "node_modules",
     "wwwroot",
-    "typings"
+    "typings",
+    "bower_components"
   ]
 }
