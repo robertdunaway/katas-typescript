@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.ts"],"names":["console","log"],"mappings":"AAEAA,QAAQC,IAAI","file":"app.js","sourcesContent":["\r\n// Let's get started!\r\nconsole.log(\"Let's get started!\");\r\n"],"sourceRoot":"/source/"}
