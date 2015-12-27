@@ -1,7 +1,0 @@
-﻿{
-  "exclude": [
-    "bower_components",
-    "node_modules",
-    "wwwroot"
-  ]
-}
