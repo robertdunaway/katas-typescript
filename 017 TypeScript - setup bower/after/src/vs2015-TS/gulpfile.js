@@ -85,6 +85,25 @@ gulp.task('tsd', function () {
     return gulp.src('./gulp_tsd.json').pipe(tsd());
 });
 
+gulp.task('libs', function () {
+    return gulp.src(['bower_components/**//bootstrap/dist/js/bootstrap.min.js'
+                    , 'bower_components/**//normalize-css/normalize.css'
+                    , 'bower_components/**//font-awesome/css/font-awesome.min.css'
+                    , 'bower_components/**/font-awesome/fonts/*.*'
+                    , 'bower_components/**//jquery/dist/jquery.min.js'
+                    , 'bower_components/**//angular/*.min.js'
+                    , 'bower_components/**//angular-ui-router/release/angular-ui-router.min.js'
+                    , 'bower_components/**//angular-bootstrap/ui-bootstrap-tpls.min.js'
+                    , 'bower_components/**//lodash/lodash.min.js'])
+      .pipe(plumber({
+          errorHandler: onError
+      }))
+      //.pipe(concat('libs.js'))
+      .pipe(gulp.dest('wwwroot/lib/bower/./'));
+});
+
+
+
 
 
  
