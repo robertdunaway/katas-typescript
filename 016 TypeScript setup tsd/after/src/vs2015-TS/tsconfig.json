@@ -2,6 +2,7 @@
   "exclude": [
     "bower_components",
     "node_modules",
-    "wwwroot"
+    "wwwroot",
+    "typings"
   ]
 }
