@@ -1,0 +1,4 @@
+
+
+- Demonstrait hoisting
+- create a module using the revealing pattern with the return at the top for readability.
