@@ -30,5 +30,12 @@ New Kata TODO:
 8. Open the before solution and do setup work there.
 9. Open the after solution and do kata there.
 
-10. Update github list
-11. Update blogger list
+Publishing:
+1. Create md file with template and import into stackedit.io
+2. Update the Title
+3. Update the Header
+4. Update all content from the docx file
+5. Publish to Github and blogger
+6. Update D:\repo-github\mycodekatas.github.io\typescript.html
+
+
