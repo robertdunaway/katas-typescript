@@ -44,7 +44,6 @@ Feel free to execute this kata multiple times because repetition creates motor m
  - After
   - https://github.com/robertdunaway/katas-typescript/tree/master/001%20TypeScript%20-%20declare%20variables/after
 
-
 # Kata
 
 Using the [before/src/app.ts] file do the following:
