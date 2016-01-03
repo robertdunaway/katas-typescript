@@ -24,10 +24,10 @@ tags:
 # 007 TypeScript - for-in vs for-of
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-10 minutes
+Examining the difference between “for in” and “for of”.
 
 ### For more information 
 Examining the difference between “for in” and “for of”.
