@@ -65,6 +65,8 @@ Create a simple function that adds two numbers.
 
 Create an anonymous function that adds two numbers.
 
+<br>
+
 ```
 
 	// Create an ananymous 'add' function.
