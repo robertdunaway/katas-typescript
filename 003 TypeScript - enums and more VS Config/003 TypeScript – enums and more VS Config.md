@@ -52,7 +52,7 @@ Create an Enum using “Red”, “Green”, and “Blue”.  This is a commonly
 
 ```
 
-enum Color { Red, Green, Blue };
+	enum Color { Red, Green, Blue };
 
 
 ```
@@ -63,13 +63,13 @@ enum Color { Red, Green, Blue };
 
 ```
 
-{
-  "exclude": [
-    "bower_components",
-    "node_modules",
-    "wwwroot"
-  ]
-}
+	{
+	  "exclude": [
+	    "bower_components",
+	    "node_modules",
+	    "wwwroot"
+	  ]
+	}
 
 
 ```
@@ -104,8 +104,8 @@ Create a variable and set it equal to the “Green” enum value.
 
 ```
 
-var myColor: number = Color.Green;
-console.log('myColor = ' + myColor);
+	var myColor: number = Color.Green;
+	console.log('myColor = ' + myColor);
 
 
 ```
@@ -116,8 +116,8 @@ Create another variable and set it equal to the enum in 0 (zero) position.  By d
 
 ```
 
-var myColor2: string = Color[0];
-console.log('myColor2 = ' + myColor2);
+	var myColor2: string = Color[0];
+	console.log('myColor2 = ' + myColor2);
 
 
 ```
