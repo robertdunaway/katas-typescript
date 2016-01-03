@@ -66,6 +66,8 @@ var variableC: number = 4;
 
 ```
 
+<br/>
+
 You can also create new variables where its type must be inferred. 
 
 ```
@@ -74,15 +76,22 @@ var inferredvariable = 5;
 
 
 ```
+
+<br/>
+
 You can also create new variables where the type is defined but with no initial value. 
 
 ```
+
+<br/>
 
 var noInitialValue: number;
 
 
 ```
 Write out your values to the console. 
+
+<br/>
 
 ```
 
