@@ -21,42 +21,83 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 001 TypeScript - declare variables
 
 ## Duration
-[minutes]
+5 minutes
 
 ## Brief
-[...]
+Declaring variables
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript variables”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/001%20TypeScript%20-%20declare%20variables
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/001%20TypeScript%20-%20declare%20variables/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Using the [before/src/app.ts] file do the following:
 
-> [highlight below for one possible answer]
+ - Create variables “`variableA`”, “`variableB`”, and “`variableC`” of type number.
+ - Now set each of the variables to some default values.  Possibly 2, 3, and 4.
+ - Now save the file.  
+  - If you have the “`Task Runner Explorer`” tab open then you’ll notice Gulp processing the file just as you save it.
+  - If you look at app.ts and app.js in the wwwroot folder you’ll notice that you’re changes suddenly appear there.  This is the power of a build tool like Gulp.
+  - Not only has Gulp moved your changes to the `wwwroot` folder but it also created a minified `app.js` file and an `app.js.map` file which links your TS file to your JS file within the browser.  This enables you to set debug breakpoints on your TS file even though your browser has no idea what a TS file is.
 
+```
+// Let's get started!
+console.log("Let's get started!");
 
+var variableA: number = 2;
+var variableB: number = 3;
+var variableC: number = 4;
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+You can also create new variables where its type must be inferred. 
+
 ```
 
-<br>
+var inferredvariable = 5;
+
+
+```
+You can also create new variables where the type is defined but with no initial value. 
+
+```
+
+var noInitialValue: number;
+
+
+```
+Write out your values to the console. 
+
+```
+
+console.log("variableA + variableB + variableC =" + variableA + variableB + variableC);
+console.log("inferredvariable = " + inferredvariable);
+console.log("noInitialValue = " + noInitialValue);
+
+
+```
+
+
+
+
+
 
 
 
