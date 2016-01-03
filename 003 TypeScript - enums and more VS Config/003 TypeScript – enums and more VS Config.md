@@ -24,39 +24,70 @@ tags:
 # [000.00 TypeScript - ]
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-[...]
+Using enums and setting up Visual Studio to play nicely with TypeScript.
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript enums”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/003%20TypeScript%20-%20enums%20and%20more%20VS%20Config/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/003%20TypeScript%20-%20enums%20and%20more%20VS%20Config/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Create an Enum using “Red”, “Green”, and “Blue”.  This is a commonly used to demonstrate Enums.
 
-> [highlight below for one possible answer]
+<br/>
 
+```
 
+enum Color { Red, Green, Blue };
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+<br/>
+
+> TIP: Immediately you will notice red lines under your code with a message that indicates these are identifiers are duplicated.  This is because the gulp tasks created a copy of the `ts` file in the `wwwroot` directory.   To resolve this we need to create a new file in the root of our project named “`tsconfig.json`” and add the following content to it.  
+
 ```
 
-<br>
+{
+  "exclude": [
+    "bower_components",
+    "node_modules",
+    "wwwroot"
+  ]
+}
+
+
+```
+
+<br/>
+
+Voila!  Problem solved!  
+<br/>
+
+Well, the problem is almost solved.  Now when you build the TS file is used to properly generate a minified JS and map file.  Everything should work except as you run your project you might notice that Visual Studio does a little file manipulation of its own which completely breaks everything.
+<br/>
+
+To stop Visual Studio from interfering go to the `Project --> Properties` and select the Build tab. Here you can disable Visual Studio’s compile for TypeScript on build.
+
+
+
+
+
 
 
 
