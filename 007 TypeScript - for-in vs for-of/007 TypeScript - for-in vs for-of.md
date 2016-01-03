@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 007 TypeScript - for-in vs for-of
 
 tags: 
 - AngularJS
@@ -21,40 +21,68 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 007 TypeScript - for-in vs for-of
 
 ## Duration
 [minutes]
 
 ## Brief
-[...]
+10 minutes
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+Examining the difference between “for in” and “for of”.
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/007%20TypeScript%20-%20for-in%20vs%20for-of/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/007%20TypeScript%20-%20for-in%20vs%20for-of/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
 
-> [highlight below for one possible answer]
+Create a list named “items” and add random values to it then output “items” to the console.
+<br>
 
+Create a “for…in” loop over the “items” list and ouput the results to the console.
+<br>
 
+Create a “for…of” loop over the “items” list and output the results to the console.
+
+<br>
+
+```
+
+	var items: string[] = ['Bob', 'and', 'Tom'];
+	console.log('items = ' + items);
+	
+	// for in loop
+	for (let item in items) {
+	    console.log('for in loop: ' + item);
+	}
+	
+	// for of loop
+	for (let item of items) {
+	    console.log('for of loop: ' + item);
+	}
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
-```
+
+<br>
+
+> NOTE: Notice “for…in” only works against the index of the list while “for…of” works against the value of each item in the list.
+
+<br>
+
+Create a few more arrays and loop over them.  Try something other than a string array.  Possibly take an array of numbers and add them in the loop.  Consider the scope of variables as you do.  IE: “let” is scoped to the block it’s defined in while “var” scopes to the function level.
+
 
 <br>
 
