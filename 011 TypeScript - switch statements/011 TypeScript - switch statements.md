@@ -52,10 +52,8 @@ Create a variable and then compare it in a switch statement then output the resu
 
 ```
 
-var result: string = 'dog';
+	var result: string = 'dog';
 
-```
-	
 	switch (result) {
 	    case 'cat':
 	        {
