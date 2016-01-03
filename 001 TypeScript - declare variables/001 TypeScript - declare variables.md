@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 001 TypeScript - declare variables
 
 tags: 
 - AngularJS
