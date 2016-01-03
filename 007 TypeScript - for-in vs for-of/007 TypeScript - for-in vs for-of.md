@@ -30,7 +30,7 @@ tags:
 Examining the difference between “for in” and “for of”.
 
 ### For more information 
-Examining the difference between “for in” and “for of”.
+BING/GOOGLE: “TypeScript for in of”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
