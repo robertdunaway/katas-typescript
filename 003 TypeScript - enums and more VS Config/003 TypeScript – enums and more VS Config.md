@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 003 TypeScript – enums and more VS Config
 
 tags: 
 - AngularJS
@@ -21,7 +21,7 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 003 TypeScript – enums and more VS Config
 
 ## Duration
 10 minutes
