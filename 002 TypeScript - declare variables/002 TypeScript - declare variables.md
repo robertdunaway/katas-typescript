@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 002 TypeScript - declare variables
 
 tags: 
 - AngularJS
@@ -21,26 +21,28 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 002 TypeScript - declare variables
 
 ## Duration
-[minutes]
+5 minutes
 
 ## Brief
-[...]
+Declarations of different types
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript variables”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/002%20TypeScript%20-%20declare%20variables/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/002%20TypeScript%20-%20declare%20variables/after
+
 
 # Kata
 
