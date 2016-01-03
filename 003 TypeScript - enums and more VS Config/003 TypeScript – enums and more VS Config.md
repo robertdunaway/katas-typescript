@@ -84,6 +84,45 @@ Well, the problem is almost solved.  Now when you build the TS file is used to p
 
 To stop Visual Studio from interfering go to the `Project --> Properties` and select the Build tab. Here you can disable Visual Studio’s compile for TypeScript on build.
 
+<br/>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/003%20TypeScript%20-%20enums%20and%20more%20VS%20Config/1.png" alt="Smiley face"> 
+
+<br/>
+
+Problem solved… for reals this time.
+
+<br/>
+
+Now, back to work…
+
+<br/>
+
+Create a variable and set it equal to the “Green” enum value.
+
+<br/>
+
+```
+
+var myColor: number = Color.Green;
+console.log('myColor = ' + myColor);
+
+
+```
+<br/>
+
+Create another variable and set it equal to the enum in 0 (zero) position.  By default, enums are zero based.
+<br/>
+
+```
+
+var myColor2: string = Color[0];
+console.log('myColor2 = ' + myColor2);
+
+
+```
+
+
 
 
 
