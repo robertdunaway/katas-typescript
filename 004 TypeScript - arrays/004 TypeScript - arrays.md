@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 004 TypeScript – arrays
 
 tags: 
 - AngularJS
@@ -21,42 +21,113 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 004 TypeScript – arrays
 
 ## Duration
-[minutes]
+10 Minutes
 
 ## Brief
-[...]
+Using arrays
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript arrays”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/004%20TypeScript%20-%20arrays/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/004%20TypeScript%20-%20arrays/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Create an array named “list1” with the values 1, 2, 3.  Send result to the console.
 
-> [highlight below for one possible answer]
-
-
-
+<br>
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+	// New array
+	var list1: number[] = [1, 2, 3];
+	console.log('list1 array = ' + list1);
+
+
+
 ```
 
 <br>
+
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/004%20TypeScript%20-%20arrays/1.png" alt="Smiley face" > 
+
+<br/>
+
+
+Create an array named “list2” with values 1,2,3.  This time use a generic array. Send result to the console.
+
+<br/>
+
+```
+
+	// results in the same array as the one above.  This is a style preference.
+	var list2: Array<number> = [1, 2, 3];
+	console.log('list2 array = ' + list2);
+
+
+```
+
+<br/>
+
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/004%20TypeScript%20-%20arrays/2.png" alt="Smiley face" > 
+
+<br/>
+
+Create an array named “anyList” with values 1,true,”three”.  This time use type any to create the array. Send result to the console.
+
+<br/>
+
+```
+
+	//Creating an array of type “any”.
+	var anyList: any[] = [1, true, "three"];
+	console.log('anyList[] = ' + anyList);
+	anyList[1] = 100;
+	console.log('anyList[] = ' + anyList);
+
+
+```
+
+
+<br/>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/004%20TypeScript%20-%20arrays/3.png" alt="Smiley face" > 
+
+<br/>
+
+Create an array named “list3” of type “string” and set its length to 10.  Send result to the console.
+
+
+<br/>
+
+```
+	
+	// Set the length of an array structure to 10.
+	var list3:string[] = new Array(10);
+	console.log('list3 = ' + list3);
+
+
+```
+
+<br/>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/004%20TypeScript%20-%20arrays/4.png" alt="Smiley face" > 
+
 
 
 
