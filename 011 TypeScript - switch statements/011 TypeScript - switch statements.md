@@ -50,6 +50,8 @@ Create a variable and then compare it in a switch statement then output the resu
 
 <br/>
 
+```
+
 var result: string = 'dog';
 
 ```
