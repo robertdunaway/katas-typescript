@@ -45,21 +45,49 @@ Feel free to execute this kata multiple times because repetition creates motor m
 
 
 # Kata
+Create variables of types Boolean, String, and Number.  Initialize these variables with values.
+<br>
 
-Create a for loop using an incremental index.
+Create 3 variables of type Any and set their values “Bob”, 5, and true.
+<br>
 
-> [highlight below for one possible answer]
+Send all 6 variables values to the console.
+<br>
 
-
-
-
-```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
-```
+> Tip: When you launch the application and Chrome loads up you need to press F12 to set breakpoints, view the console, or see what files have loaded.  Before pressing F12 the browser loads only the optimized files it needs to run the site.  After you press F12 you need to press F5 to reload the site.  This will cause all of the developer support files to load.
 
 <br>
 
+> Note: Obviously we don’t need to practice declaring variables but
+> while we do we can get familiar with Visual Studio and how Gulp and
+> TypeScript are integrated into it.
+
+
+<br>
+
+
+```
+
+// Let's get started!
+console.log("Let's get started!");
+
+var myBool: boolean = true;
+var myNumber: number = 5;
+var myString: string = 'Bob';
+
+var myAnyString: any = 'Joe';
+var myAnyNumber: any = 3;
+var myAnyBool: any = false;
+
+console.log(myBool);
+console.log(myNumber);
+console.log(myString);
+console.log(myAnyString);
+console.log(myAnyNumber);
+console.log(myAnyBool);
+
+
+```
 
 
 ##Next
