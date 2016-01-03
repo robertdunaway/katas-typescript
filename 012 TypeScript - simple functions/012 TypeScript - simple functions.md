@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 012 TypeScript - simple functions
 
 tags: 
 - AngularJS
@@ -21,42 +21,79 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 012 TypeScript - simple functions
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-[...]
+Create simple, anonymous, and arrow functions.
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript functions”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/012%20TypeScript%20-%20simple%20functions/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/012%20TypeScript%20-%20simple%20functions/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Create a simple function that adds two numbers.
 
-> [highlight below for one possible answer]
-
-
-
-
+<br>
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+	// Create a simple 'add' function.
+	function add(a: number, b: number): number {
+	    return a + b;
+	}
+	console.log('named function');
+	console.log('5 + 2 = ' + add(5, 2));
+
+
 ```
 
 <br>
+
+Create an anonymous function that adds two numbers.
+
+```
+
+	// Create an ananymous 'add' function.
+	var add2 = function (a: number, b: number): number {
+	    return a + b;
+	}
+	console.log('anonymous function');
+	console.log('5 + 5 = ' + add2(5, 5));
+
+
+```
+<br>
+
+Create an arrow function that adds two numbers.
+
+<br>
+
+```
+
+	// Create a function using the arrow function.
+	var add3 = (a: number, b: number): number => {
+	    return a + b;
+	}
+	console.log('arrow function');
+	console.log('10 + 5 = ' + add3(10, 5));
+
+
+```
+
 
 
 
