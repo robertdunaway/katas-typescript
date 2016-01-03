@@ -95,11 +95,19 @@ console.log("noInitialValue = " + noInitialValue);
 ```
 
 
+ - Run your project and when the web page loads press F12.
+ - Select the Console window and you should see the following, in Chrome.
 
 
+###Console Window
 
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/001%20TypeScript%20-%20declare%20variables/1.png" alt="Smiley face" > 
 
+Select the “Sources” tab to view any file the browser has downloaded.  In this case the TypeScript file we’ve been using is selected with a breakpoint at line 15.  The browser has no idea what TypeScript is but because we have also provided a “*.map” file the browser is able to break in the TypeScript file.
 
+###TypeScript file with a breakpoint
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/001%20TypeScript%20-%20declare%20variables/2.png" alt="Smiley face" > 
 
 ##Next
 Take a few minutes and imagine more examples. 
