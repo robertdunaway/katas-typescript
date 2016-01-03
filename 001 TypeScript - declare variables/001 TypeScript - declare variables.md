@@ -70,6 +70,8 @@ var variableC: number = 4;
 
 You can also create new variables where its type must be inferred. 
 
+<br/>
+
 ```
 
 var inferredvariable = 5;
@@ -81,14 +83,17 @@ var inferredvariable = 5;
 
 You can also create new variables where the type is defined but with no initial value. 
 
-```
-
 <br/>
+
+```
 
 var noInitialValue: number;
 
 
 ```
+
+<br/>
+
 Write out your values to the console. 
 
 <br/>
@@ -101,6 +106,8 @@ console.log("noInitialValue = " + noInitialValue);
 
 
 ```
+
+<br/>
 
 
  - Run your project and when the web page loads press F12.
