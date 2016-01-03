@@ -123,13 +123,6 @@ console.log('myColor2 = ' + myColor2);
 ```
 
 
-
-
-
-
-
-
-
 ##Next
 Take a few minutes and imagine more examples. 
 
