@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 005 TypeScript - var let const
 
 tags: 
 - AngularJS
@@ -21,43 +21,107 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 005 TypeScript - var let const
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-[...]
+Working with var, let, and const and their scopes.
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript var let const”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/005%20TypeScript%20-%20var%20let%20const/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/005%20TypeScript%20-%20var%20let%20const/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Create a few variables with “var”, “let”, and “const”.
 
-> [highlight below for one possible answer]
+<br>
+```
 
-
+	var myVar: number = 111;
+	let myLet: number = 222;
+	const myConst: number = 333;
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+<br>
+
+Demonstrate what happens when declaring a variable with “var” in the root and then again inside a block statement like foreach or if(true).
+Here is one possible example:
+
+<br>
+
+```
+
+	if (true) {
+	    var myVar: number = 444;
+	}
+	console.log('myVar = ' + myVar);
+
+
 ```
 
 <br>
 
+Demonstrate what happens when doing the same with a variable declared with “let”.
+
+<br>
+
+```
+
+	if (true) {
+	    let myLet: number = 555;
+	}
+	console.log('myLet = ' + myLet);
+
+
+```
+
+<br>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/005%20TypeScript%20-%20var%20let%20const/1.png" alt="Smiley face"> 
+
+
+<br>
+
+
+Try changing the value of the constant you created earlier.  You will receive error message, at design time, explaining why you can’t change the value.
+
+<br>
+```
+
+	myConst = 123;
+
+
+```
+
+<br>
+
+Maybe you think you can just ignore this message and fall back on the Gulp task to transpile this errant TypeScript code.
+
+<br>
+
+You’d be wrong…
+
+<br>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/005%20TypeScript%20-%20var%20let%20const/2.png" alt="Smiley face"> 
+
+
+<br>
 
 
 ##Next
