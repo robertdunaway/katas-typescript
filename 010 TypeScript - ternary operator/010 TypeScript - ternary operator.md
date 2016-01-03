@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 010 TypeScript - ternary operator
 
 tags: 
 - AngularJS
@@ -21,42 +21,94 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 010 TypeScript - ternary operator
 
 ## Duration
-[minutes]
+5 minutes
 
 ## Brief
-[...]
+Using a ternary operator (?) to check for null.
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript ternary operator ?”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/010%20TypeScript%20-%20ternary%20operator/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/010%20TypeScript%20-%20ternary%20operator/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Recreate the logic below with the ternary operator (?).  The ternary operator can be used to look for null but what it’s really doing is creating conditional logic based on a true/false response.  If null then false is returned.  
 
-> [highlight below for one possible answer]
+<br/>
 
+```
 
+	var myVal: number = null;
+	var result: number = null;
+	
+	// using an if statement
+	if (myVal == null) {
+	    result = 0;
+	}
+	else {
+	    result = myVal;
+	}
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+<br/>
+
+Now change the “myVal” variable to equal 5 and execute operation again.  Result is now set equal to “myVal” because “myVal” is not null.
+
+<br/>
+
 ```
 
-<br>
+	// Using a ternary operator to check for null.
+	result = myVal ? myVal : 0;
+	console.log('result = myVal ? myVal : 0; // result = ' + result);
+	
+	myVal = 5;
+	result = myVal ? myVal : 0;
+	console.log('result = myVal ? myVal : 0; // result = ' + result);
+
+
+```
+
+<br/>
+
+Create logic that checks if two values are equal.  At this point in the exercise result and myVal should both be 5 so a ternary operator will return true for (myVal = return).
+
+<br/>
+
+
+```
+	
+	// Using a ternary operator to evaluate.
+	result = (myVal == result) ? 'myVal and result both equal ' + result : 'values are not equal';
+	console.log(result);
+	
+
+```
+
+<br/>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/010%20TypeScript%20-%20ternary%20operator/1.png" alt="Smiley face"> 
+
+
+<br/>
+
+
 
 
 
