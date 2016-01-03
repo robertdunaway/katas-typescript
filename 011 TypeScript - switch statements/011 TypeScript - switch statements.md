@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 011 TypeScript - switch statements
 
 tags: 
 - AngularJS
@@ -21,43 +21,69 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 011 TypeScript - switch statements
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-[...]
+Using switch statements
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript switch”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/011%20TypeScript%20-%20switch%20statements/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/011%20TypeScript%20-%20switch%20statements/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Create a variable and then compare it in a switch statement then output the results to the console.
 
-> [highlight below for one possible answer]
+<br/>
 
+var result: string = 'dog';
 
+```
+	
+	switch (result) {
+	    case 'cat':
+	        {
+	            console.log('a cat was chosen');
+	        }
+	    case 'dog':
+	        {
+	            console.log('a dog was chosen');
+	        }
+	}
+	Create another switch statement but add a “default”.
+	
+	switch (result) {
+	    case 'cat': {
+	        console.log('a cat was chosen');
+	    }
+	    case 'bird': {
+	        console.log('a bird was chosen');
+	    }
+	    default: {
+	        console.log('the default was used.');
+	    }
+	}
 
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
-```
 
-<br>
+<br/>
 
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/011%20TypeScript%20-%20switch%20statements/1.png" alt="Smiley face">
 
 
 ##Next
