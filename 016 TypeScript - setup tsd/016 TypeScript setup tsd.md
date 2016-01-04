@@ -155,9 +155,9 @@ Create a new file at the root of the project named “`gulp_tsd.json`”.  Add t
 Add a task to the gulp file.  First add a reference to the gulp-tsd plugin.
 
 <br>
-
+```
     , tsd = require('gulp-tsd');
-
+```
 <br>
 
 Then add this task.
