@@ -48,6 +48,8 @@ Feel free to execute this kata multiple times because repetition creates motor m
 
 Install TSD, a kind of package manager for TypeScript Definitions.
 
+<br>
+
 ```
 npm install tsd -g
 
@@ -56,6 +58,8 @@ npm install tsd -g
 <br>
 
 Now TSD is installed and you can run commands with it.
+
+<br>
 
 
 ```
@@ -74,6 +78,8 @@ Now TSD is installed and you can run commands with it.
 
 Create TSD files
 
+<br>
+
 ```
 	npm init
 ```
@@ -85,6 +91,8 @@ Create TSD files
 
 Get TSD definitions for Angularjs and its dependencies.
 
+<br>
+
 ```
 tsd install angular --resolve --overwrite --save
 ```
@@ -93,6 +101,8 @@ tsd install angular --resolve --overwrite --save
 
 To reinstall TSD definitions
 
+<br>
+
 ```
 tsd reinstall --save –overwrite
 ```
@@ -100,6 +110,8 @@ tsd reinstall --save –overwrite
 <br>
 
 To update with the latest definitions
+
+<br>
 
 ```
 tsd update --save –overwrite
@@ -126,6 +138,8 @@ Gulp can handle this for us.  We will configure a gulp task to retrieve the late
 
 Create a new file at the root of the project named “`gulp_tsd.json`”.  Add the following configuration to the new file.
 
+<br>
+
 ```
 
     {
@@ -140,6 +154,8 @@ Create a new file at the root of the project named “`gulp_tsd.json`”.  Add t
 
 Add a task to the gulp file.  First add a reference to the gulp-tsd plugin.
 
+<br>
+
     , tsd = require('gulp-tsd');
 
 <br>
@@ -148,12 +164,16 @@ Then add this task.
 
 ```
 
+<br>
+
 gulp.task('tsd', function () {
     return gulp.src('./gulp_tsd.json').pipe(tsd());
 });
 
 
 ```
+
+<br>
 
 In the Task Runner Explorer find the tsd task. Right click on the tsd task and select “Bindings” then “Project Open”.  This will cause the tsd task to reinstall the type script definitions whenever a project is opened.
 
