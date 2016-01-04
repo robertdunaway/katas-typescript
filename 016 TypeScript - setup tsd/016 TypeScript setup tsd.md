@@ -162,9 +162,9 @@ Add a task to the gulp file.  First add a reference to the gulp-tsd plugin.
 
 Then add this task.
 
-```
-
 <br>
+
+```
 
 gulp.task('tsd', function () {
     return gulp.src('./gulp_tsd.json').pipe(tsd());
