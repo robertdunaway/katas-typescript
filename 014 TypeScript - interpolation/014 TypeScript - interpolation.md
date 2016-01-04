@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 014 TypeScript - interpolation
 
 tags: 
 - AngularJS
@@ -21,42 +21,56 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 014 TypeScript - interpolation
 
 ## Duration
-[minutes]
+5 minutes
 
 ## Brief
-[...]
+Using string interpolation
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript interpolation”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/014%20TypeScript%20-%20interpolation/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/014%20TypeScript%20-%20interpolation/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
+Replace the following with an interpolated string.
 
-> [highlight below for one possible answer]
-
-
-
+<br>
 
 ```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
+
+	var firstName: string = 'Bob';
+	var career: string = 'programmer';
+	
+	var newString: string = firstName + ' is a ' + career + '.'
+	console.log('classic string concatination');
+	console.log(newString);
+	
+	var newInterpString: string = `${firstName} is a ${career}.`;
+	console.log('string interpolation');
+	console.log(newInterpString);
+
+
 ```
 
 <br>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/014%20TypeScript%20-%20interpolation/1.png" alt="Smiley face"> 
+
+
 
 
 
