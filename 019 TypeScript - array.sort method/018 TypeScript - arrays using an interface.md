@@ -1,5 +1,5 @@
 ---
-title: 000.00 TypeScript - ]
+title: 019 TypeScript - array.sort method
 
 tags: 
 - AngularJS
@@ -21,44 +21,98 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [000.00 TypeScript - ]
+# 019 TypeScript - array.sort method
 
 ## Duration
-[minutes]
+10 minutes
 
 ## Brief
-[...]
+Creating a sorter for an array.
 
 ### For more information 
-BING/GOOGLE: “TypeScript ”
+BING/GOOGLE: “TypeScript array sort”
 
 ## Instructions
 Get tutorial folder or the entire katas-typescript repo.
-Open the [before/*.sln] file and execute the kata.
+Open the `[before/*.sln]` file and execute the kata.
 Feel free to execute this kata multiple times because repetition creates motor memory.
 
 ## Github
- - Before (start kata with this solution)
-  - https...
- - After (completed solution)
+ - Before (start kata with this)
+  - https://github.com/robertdunaway/katas-typescript/tree/master/019%20TypeScript%20-%20array.sort%20method/before
+ - After
+  - https://github.com/robertdunaway/katas-typescript/tree/master/019%20TypeScript%20-%20array.sort%20method/after
+
 
 # Kata
 
-Create a for loop using an incremental index.
-
-> [highlight below for one possible answer]
-
-
-
-
-```
-   for (var index: number = 0; index < 10; index++) {
-   	    console.log(index);
-```
+Create a simple interface.
 
 <br>
 
+interface pet {
+    name: string;
+    age: number;
+    weight: number;
+}
 
+<br>
+
+Popular a new array based on the new interface.
+
+<br>
+
+var myPets: pet[] = [
+    { name: 'Sally', age: 18, weight: 85 },
+    { name: 'Jasmine', age: 9, weight: 55 },
+    { name: 'Rush', age: 15, weight: 45 },
+    { name: 'Roxie', age: 6, weight: 85 }
+];
+
+<br>
+
+Create a comparer based on age.
+
+<br>
+
+var compareAge = function (a: pet, b: pet) {
+    if (a.age > b.age) { return -1; }
+    if (a.age < b.age) {return 1; }
+    return 0;
+}
+
+<br>
+
+Output the sorted array to the console.
+
+<br>
+
+console.log(myPets.sort(compareAge));
+
+<br>
+
+Create a comparer based on weight.
+
+<br>
+
+var compareWeight = function (a: pet, b: pet) {
+    if (a.weight > b.weight) { return -1; }
+    if (a.weight < b.weight) { return 1; }
+    return 0;
+}
+
+<br>
+
+Output the sorted array to the console.
+
+<br>
+
+console.log(myPets.sort(compareWeight));
+
+
+<br>
+
+ <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/019%20TypeScript%20-%20array.sort%20method/1.png" alt="Smiley face"> 
 
 ##Next
 Take a few minutes and imagine more examples. 
