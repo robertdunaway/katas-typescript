@@ -51,11 +51,11 @@ Create a simple interface.
 <br>
 ```
 
-interface pet {
-    name: string;
-    age: number;
-    weight: number;
-}
+	interface pet {
+	    name: string;
+	    age: number;
+	    weight: number;
+	}
 
 
 ```
@@ -67,12 +67,12 @@ Popular a new array based on the new interface.
 <br>
 ```
 
-var myPets: pet[] = [
-    { name: 'Sally', age: 18, weight: 85 },
-    { name: 'Jasmine', age: 9, weight: 55 },
-    { name: 'Rush', age: 15, weight: 45 },
-    { name: 'Roxie', age: 6, weight: 85 }
-];
+	var myPets: pet[] = [
+	    { name: 'Sally', age: 18, weight: 85 },
+	    { name: 'Jasmine', age: 9, weight: 55 },
+	    { name: 'Rush', age: 15, weight: 45 },
+	    { name: 'Roxie', age: 6, weight: 85 }
+	];
 
 
 ```
@@ -85,11 +85,11 @@ Create a comparer based on age.
 
 ```
 
-var compareAge = function (a: pet, b: pet) {
-    if (a.age > b.age) { return -1; }
-    if (a.age < b.age) {return 1; }
-    return 0;
-}
+	var compareAge = function (a: pet, b: pet) {
+	    if (a.age > b.age) { return -1; }
+	    if (a.age < b.age) {return 1; }
+	    return 0;
+	}
 
 
 ```
@@ -100,7 +100,7 @@ Output the sorted array to the console.
 
 <br>
 ```
-console.log(myPets.sort(compareAge));
+	console.log(myPets.sort(compareAge));
 ```
 <br>
 
@@ -110,11 +110,11 @@ Create a comparer based on weight.
 
 ```
 
-var compareWeight = function (a: pet, b: pet) {
-    if (a.weight > b.weight) { return -1; }
-    if (a.weight < b.weight) { return 1; }
-    return 0;
-}
+	var compareWeight = function (a: pet, b: pet) {
+	    if (a.weight > b.weight) { return -1; }
+	    if (a.weight < b.weight) { return 1; }
+	    return 0;
+	}
 
 
 ```
@@ -125,7 +125,7 @@ Output the sorted array to the console.
 
 <br>
 ```
-console.log(myPets.sort(compareWeight));
+	console.log(myPets.sort(compareWeight));
 ```
 
 <br>
