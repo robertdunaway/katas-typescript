@@ -53,17 +53,17 @@ Bring up a command line in the root of the project and run the following command
 Globally install Bower
 
 <br>
-
-	`npm install bower -g`
-
+```
+	npm install bower -g
+```
 <br>
 
 Create the initial Bower file
 
 <br>
-
-	`bower init`
-
+```
+	bower init
+```
 <br>
 
 Install two bower packages to match the two TSD files installed earlier.
