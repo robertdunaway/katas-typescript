@@ -2,3 +2,9 @@
 
 - Demonstrait hoisting
 - create a module using the revealing pattern with the return at the top for readability.
+
+http://www.johnpapa.net/typescriptpost1/
+http://www.johnpapa.net/typescriptpost2/
+http://www.johnpapa.net/typescriptpost3/
+http://www.johnpapa.net/typescriptpost4/
+
