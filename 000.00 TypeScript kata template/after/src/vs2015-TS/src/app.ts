@@ -1,3 +1,6 @@
-﻿
-// Let's get started!
-console.log("Let's get started!");
+﻿(function() {
+    
+    // Let's get started!
+    console.log("Let's get started!");
+
+})();
