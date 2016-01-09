@@ -58,7 +58,18 @@ Replace the following with an interpolated string.
 	var newString: string = firstName + ' is a ' + career + '.'
 	console.log('classic string concatination');
 	console.log(newString);
+
 	
+```
+
+<br>
+
+The end result might look like this.
+
+<br>
+
+```	
+
 	var newInterpString: string = `${firstName} is a ${career}.`;
 	console.log('string interpolation');
 	console.log(newInterpString);
