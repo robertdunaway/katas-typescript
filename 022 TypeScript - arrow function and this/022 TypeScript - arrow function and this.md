@@ -113,6 +113,7 @@ Create a new class with the “displayUserId” function as an arrow function to
     // Notice "this.userId" returns "abc123".
     myEmployee2.displayUserId();
 
+
 ```
 
 ##Next
