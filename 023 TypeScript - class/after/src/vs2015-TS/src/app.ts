@@ -3,7 +3,6 @@
     // Let's get started!
     console.log("Let's get started!");
 
-
     // Create a very basic class with only 3 properties.
     // New up an object with your new class as the template and update the properties.
     // Output your new class to the console.
@@ -27,21 +26,34 @@
     // new up the new class.
     // Explicitly call the "add" function.
 
-    class math {
+    class Math {
         constructor(a: number, b: number) {
-            console.log('constructor logic: ' + a + b);
+            console.log(`constructor logic: ${(a + b)}`);
         }
         add(a: number, b: number) {
-            console.log('add function: ' + a + b);
+            console.log(`add function: ${(a + b)}`);
         }
     }
 
-    var y = new math(5, 5);
+    var y = new Math(5, 5);
     y.add(10, 5);
 
 
+    // Create anothing class "Person" with FirstName, LastName, Email, and
+    // a fullName() that returns the first and last names.  Output the result.
+    class Person {
+        FirstName: string;
+        LastName: string;
+        Email: string;
+        fullName() { return `${this.FirstName}, ${this.LastName}`}
+    }
 
+    var z = new Person();
+    z.FirstName = 'Robert';
+    z.LastName = 'Dunaway';
+    
+    var fullName = z.fullName();
 
-
-
+    console.log(`full name is: ${fullName}`);
+    
 })();
