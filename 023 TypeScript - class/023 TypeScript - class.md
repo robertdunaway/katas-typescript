@@ -95,7 +95,7 @@ Create an object of type Math.  Pass in two numbers and check the console for th
         }
     }
 
-    var y = new Math(5, 5);
+    var y: Math = new Math(5, 5);
     y.add(10, 5);
 
 
@@ -116,7 +116,7 @@ Create a class, “Person”, with the properties “FirstName”, “LastName�
     }
 
 
-    var z = new Person();
+    var z: Person = new Person();
     z.FirstName = 'Robert';
     z.LastName = 'Dunaway';
     
