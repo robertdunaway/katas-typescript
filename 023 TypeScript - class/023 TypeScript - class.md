@@ -21,7 +21,7 @@ tags:
 
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
 
-# [023 TypeScript - class
+# 023 TypeScript - class
 
 ## Duration
 10 minutes
