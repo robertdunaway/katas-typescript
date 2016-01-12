@@ -140,4 +140,6 @@ The end result might look something like this.
 ##Next
 Take a few minutes and imagine more examples. 
 
+<br>
+
  <img src="https://raw.githubusercontent.com/robertdunaway/katas-typescript/master/katas-TS-logo.png" alt="Smiley face" height="200" width="200"> 
