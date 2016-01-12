@@ -109,6 +109,7 @@ Create a class, “Person”, with the properties “FirstName”, “LastName�
 <br>
 
 ```
+
     class Person {
         FirstName: string;
         LastName: string;
