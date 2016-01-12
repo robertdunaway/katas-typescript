@@ -52,13 +52,14 @@ Create a class with three properties.  Declare an object of this new class, set 
 
 The result could look something like this
 <br>
+
+```
+ 
     class myBasicClass {
         property1: number;
         property2: string;
         property3: string;
     }
-
-```
 
     var x = new myBasicClass();
     x.property1 = 1;
