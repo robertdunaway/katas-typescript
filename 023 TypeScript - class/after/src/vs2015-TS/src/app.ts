@@ -35,7 +35,7 @@
         }
     }
 
-    var y = new Math(5, 5);
+    var y: Math = new Math(5, 5);
     y.add(10, 5);
 
 
@@ -48,7 +48,7 @@
         fullName() { return `${this.FirstName}, ${this.LastName}`}
     }
 
-    var z = new Person();
+    var z: Person = new Person();
     z.FirstName = 'Robert';
     z.LastName = 'Dunaway';
     
