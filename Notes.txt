@@ -14,6 +14,7 @@ Dealing with Nulls!
 
 NOTE: Excellent resource to make sure content is not accidentally plagiarised.
 https://www.thepensters.com/free-plagiarism-checker-for-students-online.html
+http://blog.ionic.io/ionic-and-typescript-part-1/
 
 
 New Kata TODO:
