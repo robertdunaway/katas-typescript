@@ -99,19 +99,19 @@ gulp.task('libs', function () {
           errorHandler: onError
       }))
       //.pipe(concat('libs.js'))
-      .pipe(gulp.dest('wwwroot/lib/bower/./'));
+      .pipe(gulp.dest('wwwroot/lib/./'));
 });
 
 
 
 
 
- 
+
 // ----------------------------------------------------------------
 // Default Task
 // ----------------------------------------------------------------
 gulp.task('default', function () {
-    runSequence('clean-wwwroot', 'copy-to-wwwroot',
+    runSequence('clean-wwwroot', 'copy-to-wwwroot', 'libs',
                 ['minifyhtml', 'tscompile', 'tslint']
                 , 'watch'
                 );
