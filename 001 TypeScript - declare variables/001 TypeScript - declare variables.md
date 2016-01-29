@@ -55,7 +55,7 @@ Using the [before/src/app.ts] file do the following:
   - If you look at app.ts and app.js in the wwwroot folder you’ll notice that you’re changes suddenly appear there.  This is the power of a build tool like Gulp.
   - Not only has Gulp moved your changes to the `wwwroot` folder but it also created a minified `app.js` file and an `app.js.map` file which links your TS file to your JS file within the browser.  This enables you to set debug breakpoints on your TS file even though your browser has no idea what a TS file is.
 
-```
+```typescript
 
 	// Let's get started!
 	console.log("Let's get started!");
@@ -73,7 +73,7 @@ You can also create new variables where its type must be inferred.
 
 <br/>
 
-```
+```typescript
 
 	var inferredvariable = 5;
 
@@ -86,7 +86,7 @@ You can also create new variables where the type is defined but with no initial 
 
 <br/>
 
-```
+```typescript
 
 	var noInitialValue: number;
 
@@ -99,7 +99,7 @@ Write out your values to the console.
 
 <br/>
 
-```
+```typescript
 
 	console.log("variableA + variableB + variableC =" + variableA + variableB + variableC);
 	console.log("inferredvariable = " + inferredvariable);
