@@ -50,7 +50,7 @@ Replace the following with an interpolated string.
 
 <br>
 
-```
+```typescript
 
 	var firstName: string = 'Bob';
 	var career: string = 'programmer';
@@ -68,7 +68,7 @@ The end result might look like this.
 
 <br>
 
-```	
+```	typescript
 
 	var newInterpString: string = `${firstName} is a ${career}.`;
 	console.log('string interpolation');
