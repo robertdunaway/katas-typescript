@@ -51,7 +51,7 @@ Create two variables of type number.  These can be used throughout this kata.
 
 <br/>
 
-```
+```typescript
 	
 	var a: number = 10;
 	var b: number = 5;
@@ -64,7 +64,7 @@ Output to the console the addition, subtraction, multiplication, and division of
 
 <br/>
 
-```
+```typescript
 
 	console.log('a + b = ' + (a + b));
 	console.log('a - b = ' + (a - b));
@@ -80,7 +80,7 @@ Tip: The % operator is used.
 
 <br/>
 
-```
+```typescript
 
 	console.log('a % b = ' + (a % b));
 	console.log('a % b = ' + (a % 6));
@@ -94,7 +94,7 @@ Increment and decrement “a” with operators.
 
 <br/>
 
-```
+```typescript
 
 	a++;
 	console.log('a++ = ' + a);
