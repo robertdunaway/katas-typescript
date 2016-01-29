@@ -50,7 +50,7 @@ Create a for loop using an incremental index.
 
 <br>
 
-```
+```typescript
 
 	for (var index: number = 0; index < 10; index++) {
 	    console.log(index);
@@ -69,7 +69,7 @@ Imagine another for loop.
 
 <br>
 
-```
+```typescript
 
 	var myNumber: number = 5;
 	for (var multiplier = 1; multiplier <= 10; multiplier++) {
