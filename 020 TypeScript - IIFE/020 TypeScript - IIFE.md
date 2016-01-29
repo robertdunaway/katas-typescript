@@ -50,7 +50,7 @@ Apply the IIFE design pattern to each function.  Use the dashes to indicate the 
 
 <br>
 
-```
+```typescript
 
 
 	    // Wrap this simple function in IIFE
@@ -159,7 +159,7 @@ The end result should be...
 
 <br>
 
-```
+```typescript
 
 	(function () {
 	    // Wrap this simple function in IIFE
