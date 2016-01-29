@@ -56,7 +56,7 @@ Now call your new function and pass in your simple output function.
 
 <br>
 
-```
+```typescript
 
     // create a function to be used as a callback.  This is our callback function.
     var myCB = function () {
@@ -83,7 +83,7 @@ Create a function that receives the callback as a parameter and calls the callba
 
 <br>
 
-```
+```typescript
 
     // create another callback function whose job is to output whatever it's 
     // passed back to display.  If nothing is passed back then output a default value.
