@@ -50,7 +50,7 @@ Create a variable and then compare it in a switch statement then output the resu
 
 <br/>
 
-```
+```typescript
 
 	var result: string = 'dog';
 
