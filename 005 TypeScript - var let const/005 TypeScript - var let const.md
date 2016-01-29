@@ -49,7 +49,7 @@ Feel free to execute this kata multiple times because repetition creates motor m
 Create a few variables with “var”, “let”, and “const”.
 
 <br>
-```
+```typescript
 
 	var myVar: number = 111;
 	let myLet: number = 222;
@@ -64,7 +64,7 @@ Here is one possible example:
 
 <br>
 
-```
+```typescript
 
 	if (true) {
 	    var myVar: number = 444;
@@ -80,7 +80,7 @@ Demonstrate what happens when doing the same with a variable declared with “le
 
 <br>
 
-```
+```typescript
 
 	if (true) {
 	    let myLet: number = 555;
@@ -101,7 +101,7 @@ Demonstrate what happens when doing the same with a variable declared with “le
 Try changing the value of the constant you created earlier.  You will receive error message, at design time, explaining why you can’t change the value.
 
 <br>
-```
+```typescript
 
 	myConst = 123;
 
