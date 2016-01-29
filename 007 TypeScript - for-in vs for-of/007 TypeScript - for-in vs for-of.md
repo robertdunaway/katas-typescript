@@ -57,7 +57,7 @@ Create a “for…of” loop over the “items” list and output the results to
 
 <br>
 
-```
+```typescript
 
 	var items: string[] = ['Bob', 'and', 'Tom'];
 	console.log('items = ' + items);
