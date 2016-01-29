@@ -48,7 +48,7 @@ Feel free to execute this kata multiple times because repetition creates motor m
 
 Enter the following code to start off this kata.
 <br>
-```
+```typescript
 
 	// declare your union type variable for 3 different types.
 	var myUnionVar: string | number | boolean;
@@ -76,7 +76,7 @@ Set the myUnionVar to the number 5 and then use the “typeof” operator to det
 
 <br>
 
-```
+```typescript
 
 	myUnionVar = 5;
 	console.log('typeof myUnionVar = ' + typeof myUnionVar);
@@ -98,7 +98,7 @@ A common scenario, ideal for union types, is when you don’t know if you are re
 Create a Union Type variable that can receive a single number or an array of numbers.  Execute a simple “if” statement against the new variable and send output to the console window.
 <br>
 
-```
+```typescript
 
 var myUnionNumber: number | number[];
 
@@ -129,7 +129,7 @@ While we are at it, let’s go ahead and save the “typeof” result to another
 
 <br>
 
-```
+```typescript
 
 // use a switch statement around the typeof command.
 var myVarType: string = typeof myUnionNumber;
