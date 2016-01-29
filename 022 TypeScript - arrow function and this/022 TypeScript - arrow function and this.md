@@ -55,7 +55,7 @@ Run the application with the following code and make not of the value returned b
 
 <br>
 
-```
+```typescript
 
 (function () {
     
@@ -93,7 +93,7 @@ Create a new class with the “displayUserId” function as an arrow function to
 
 <br>
 
-```
+```typescript
 
     class employee2 {
         userId: string;
