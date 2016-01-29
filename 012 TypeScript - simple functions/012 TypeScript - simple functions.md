@@ -49,7 +49,7 @@ Feel free to execute this kata multiple times because repetition creates motor m
 Create a simple function that adds two numbers.
 
 <br>
-```
+```typescript
 
 	// Create a simple 'add' function.
 	function add(a: number, b: number): number {
@@ -67,7 +67,7 @@ Create an anonymous function that adds two numbers.
 
 <br>
 
-```
+```typescript
 
 	// Create an ananymous 'add' function.
 	var add2 = function (a: number, b: number): number {
@@ -84,7 +84,7 @@ Create an arrow function that adds two numbers.
 
 <br>
 
-```
+```typescript
 
 	// Create a function using the arrow function.
 	var add3 = (a: number, b: number): number => {
