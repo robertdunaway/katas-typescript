@@ -50,7 +50,7 @@ Recreate the logic below with the ternary operator (?).  The ternary operator ca
 
 <br/>
 
-```
+```typescript
 
 	var myVal: number = null;
 	var result: number = null;
@@ -72,7 +72,7 @@ Now change the “myVal” variable to equal 5 and execute operation again.  Res
 
 <br/>
 
-```
+```typescript
 
 	// Using a ternary operator to check for null.
 	result = myVal ? myVal : 0;
@@ -92,7 +92,7 @@ Create logic that checks if two values are equal.  At this point in the exercise
 <br/>
 
 
-```
+```typescript
 	
 	// Using a ternary operator to evaluate.
 	result = (myVal == result) ? 'myVal and result both equal ' + result : 'values are not equal';
