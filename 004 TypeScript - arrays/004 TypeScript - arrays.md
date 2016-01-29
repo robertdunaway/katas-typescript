@@ -50,7 +50,7 @@ Create an array named “list1” with the values 1, 2, 3.  Send result to the c
 
 <br>
 
-```
+```typescript
 
 	// New array
 	var list1: number[] = [1, 2, 3];
@@ -72,7 +72,7 @@ Create an array named “list2” with values 1,2,3.  This time use a generic ar
 
 <br/>
 
-```
+```typescript
 
 	// results in the same array as the one above.  This is a style preference.
 	var list2: Array<number> = [1, 2, 3];
@@ -92,7 +92,7 @@ Create an array named “anyList” with values 1,true,”three”.  This time u
 
 <br/>
 
-```
+```typescript
 
 	//Creating an array of type “any”.
 	var anyList: any[] = [1, true, "three"];
@@ -115,7 +115,7 @@ Create an array named “list3” of type “string” and set its length to 10.
 
 <br/>
 
-```
+```typescript
 	
 	// Set the length of an array structure to 10.
 	var list3:string[] = new Array(10);
