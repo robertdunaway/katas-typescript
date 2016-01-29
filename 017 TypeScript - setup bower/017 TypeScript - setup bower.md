@@ -54,7 +54,10 @@ Globally install Bower
 
 <br>
 ```
+
 	npm install bower -g
+
+
 ```
 <br>
 
@@ -62,7 +65,10 @@ Create the initial Bower file
 
 <br>
 ```
+
 	bower init
+
+
 ```
 <br>
 
