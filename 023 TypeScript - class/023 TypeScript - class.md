@@ -53,7 +53,7 @@ Create a class with three properties.  Declare an object of this new class, set 
 The result could look something like this
 <br>
 
-```
+```typescript
  
     class myBasicClass {
         property1: number;
@@ -85,7 +85,7 @@ Create an object of type Math.  Pass in two numbers and check the console for th
 
 <br>
 
-```
+```typescript
 
   class Math {
         constructor(a: number, b: number) {
@@ -108,7 +108,7 @@ Create a class, “Person”, with the properties “FirstName”, “LastName�
 
 <br>
 
-```
+```typescript
 
     class Person {
         FirstName: string;
