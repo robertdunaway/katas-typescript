@@ -66,7 +66,7 @@ Send all 6 variables values to the console.
 <br>
 
 
-```
+```javascript
 
 	// Let's get started!
 	console.log("Let's get started!");
