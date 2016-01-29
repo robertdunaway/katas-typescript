@@ -49,7 +49,7 @@ Feel free to execute this kata multiple times because repetition creates motor m
 Create a basic string array and send its content to the console.
 
 <br>
-```
+```typescript
 
 	var pets: string[] = ['Jasmin', 'Roxie', 'Sally', 'Rush'];
 	console.log(pets);
@@ -61,7 +61,7 @@ Create a basic string array and send its content to the console.
 Create an interface.
 
 <br>
-```
+```typescript
 
 	interface pet {
 	    name: string;
@@ -77,15 +77,18 @@ Create an interface.
 Create an empty array based on the pet interface.
 
 <br>
-```
+```typescript
+
 	var complexPetsArray: pet[] = [];
+
+
 ```
 <br>
 
 Push each dog onto the new array.
 
 <br>
-```
+```typescript
 
 	complexPetsArray.push({
 	    name: 'Jasmin',
@@ -102,7 +105,7 @@ Create a new object of type pet and push it onto the array.
 
 <br>
 
-```
+```typescript
 
 	var roxie: pet = {
 	    name: 'Roxie',
@@ -123,7 +126,7 @@ Create an array of the last two dogs, 'Sally' and 'Rush' then push the array ont
 
 <br>
 
-```
+```typescript
 
 	var myPets: pet[] = [{ name: 'Sally', age: 18, weight: 85 },
 	                     { name: 'Rush', age: 15, weight: 45}];
@@ -143,7 +146,7 @@ Loop over myPets and push each onto the complexPetsArray and output to the conso
 
 <br>
 
-```
+```typescript
 
 	for (var p of myPets) {
 	    complexPetsArray.push(p);
