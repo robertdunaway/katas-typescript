@@ -50,7 +50,7 @@ Create an Enum using “Red”, “Green”, and “Blue”.  This is a commonly
 
 <br/>
 
-```
+```typescript
 
 	enum Color { Red, Green, Blue };
 
@@ -61,7 +61,7 @@ Create an Enum using “Red”, “Green”, and “Blue”.  This is a commonly
 
 > TIP: Immediately you will notice red lines under your code with a message that indicates these are identifiers are duplicated.  This is because the gulp tasks created a copy of the `ts` file in the `wwwroot` directory.   To resolve this we need to create a new file in the root of our project named “`tsconfig.json`” and add the following content to it.  
 
-```
+```typescript
 
 	{
 	  "exclude": [
@@ -102,7 +102,7 @@ Create a variable and set it equal to the “Green” enum value.
 
 <br/>
 
-```
+```typescript
 
 	var myColor: number = Color.Green;
 	console.log('myColor = ' + myColor);
@@ -114,7 +114,7 @@ Create a variable and set it equal to the “Green” enum value.
 Create another variable and set it equal to the enum in 0 (zero) position.  By default, enums are zero based.
 <br/>
 
-```
+```typescript
 
 	var myColor2: string = Color[0];
 	console.log('myColor2 = ' + myColor2);
