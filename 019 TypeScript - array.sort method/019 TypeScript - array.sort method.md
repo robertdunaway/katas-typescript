@@ -49,7 +49,7 @@ Feel free to execute this kata multiple times because repetition creates motor m
 Create a simple interface.
 
 <br>
-```
+```typescript
 
 	interface pet {
 	    name: string;
@@ -65,7 +65,7 @@ Create a simple interface.
 Popular a new array based on the new interface.
 
 <br>
-```
+```typescript
 
 	var myPets: pet[] = [
 	    { name: 'Sally', age: 18, weight: 85 },
@@ -83,7 +83,7 @@ Create a comparer based on age.
 
 <br>
 
-```
+```typescript
 
 	var compareAge = function (a: pet, b: pet) {
 	    if (a.age > b.age) { return -1; }
@@ -99,8 +99,11 @@ Create a comparer based on age.
 Output the sorted array to the console.
 
 <br>
-```
+```typescript
+
 	console.log(myPets.sort(compareAge));
+
+
 ```
 <br>
 
@@ -108,7 +111,7 @@ Create a comparer based on weight.
 
 <br>
 
-```
+```typescript
 
 	var compareWeight = function (a: pet, b: pet) {
 	    if (a.weight > b.weight) { return -1; }
@@ -124,8 +127,11 @@ Create a comparer based on weight.
 Output the sorted array to the console.
 
 <br>
-```
+```typescript
+
 	console.log(myPets.sort(compareWeight));
+
+
 ```
 
 <br>
