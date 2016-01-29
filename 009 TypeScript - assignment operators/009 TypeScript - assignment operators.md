@@ -51,7 +51,7 @@ Create two variables of type number for working with assignment operators
 
 <br>
 
-```
+```typescript
 
 	var a: number = 10;
 	var b: number = 5;
@@ -65,7 +65,7 @@ Output to the console the results of assignment operators `(=, +=, -=, *=, /=, %
 
 <br>
 
-```
+```typescript
 
 	var a: number = 10;
 	var b: number = 5;
