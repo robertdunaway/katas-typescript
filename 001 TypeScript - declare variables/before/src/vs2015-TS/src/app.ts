@@ -5,8 +5,7 @@ var variableA: number = 2;
 var variableB: number = 3;
 var variableC: number = 4;
 
-// inferred type
-var inferredvariable = 5;
+
 
 // no value
 var noInitialValue;
