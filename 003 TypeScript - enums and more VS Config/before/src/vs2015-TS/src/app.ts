@@ -1,3 +1,4 @@
 ﻿
-// Let's get started!
-console.log("Let's get started!");
+console.log("Enum varaibale");
+Enum coloe{red,green,blue};
+console.log("Enum varaibale==>"+color);
